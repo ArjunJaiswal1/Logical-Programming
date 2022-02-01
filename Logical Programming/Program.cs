@@ -11,7 +11,7 @@ namespace LogicalProgramming
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("Enter the program number which is to be executed \n 1. Fibonacci Series \n 2. Perfect number\n 3. Exit");
+                Console.WriteLine("Enter the program number which is to be executed \n 1. Fibonacci Series \n 2. Perfect number\n 3. prime number\n 4. Exit");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -26,6 +26,11 @@ namespace LogicalProgramming
                         break;
 
                     case 3:
+                        Logical logical = new Logical();
+                        logical.PrimeNumber();
+                        break;
+
+                    case 4:
                         flag = false;
                         break;
                 }
